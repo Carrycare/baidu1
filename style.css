@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0);
+    z-index: 99;
+}
+
+.header .logo {
+    width: 20%;
+    height: 90px;
+    float: left;
+    margin-left: 8%;
+    margin-top: 20px;
+}
+
+.header .nav {
+    width: 55%;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+.header .nav ul {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+}
+
+#choosed {
+    font-size: 14px;
+    color: red;
+}
+
+.header .nav ul li {
+    list-style: none;
+    float: left;
+}
+
+.navlist {
+    margin: 0 20px;
+    display: inline-block;
+    height: 100px;
+    font-family: "微软雅黑";
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+}
+
+.bannerbox {
+    width: 100%;
+    height: 600px;
+    background: url("bg1.jpg") no-repeat;
+    transition: all 1.5s;
+    background-size: 100%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.bannerbox:hover {
+    background-size: 104%;
+}
+
+.content {
+    width: 86%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 140px;
+    position: relative;
+}
+
+.contenttxt {
+    display: inline-block;
+    font-size: 44px;
+    color: #fff;
+    font-family: "微软雅黑";
+    margin-left: 80px;
+}
+
+.stext {
+    display: block;
+    width: 420px;
+    height: 140px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.perdotbox {
+    height: 30px;
+    position: relative;
+    text-align: center;
+    top: 400px;
+}
+
+.perdotbox .perdot {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: #ccc;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.perdotbox .perdot:hover {
+    background: #fff;
+    cursor: pointer;
+}
+
+.loginBox {
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+/*  */
+
+.twocode {
+    width: 190px;
+    height: 280px;
+    margin: 30px auto;
+    display: none;
+}
+
+.twocode h3 {
+    font-family: "微软雅黑";
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0 12px 0;
+    font-weight: 100;
+    color: #333;
+}
+
+.twocode p {
+    font-family: "微软雅黑";
+    text-align: center;
+    color: #333;
+    position: relative;
+    z-index: 49;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.twocode p a {
+    color: #3582f8;
+    text-decoration: none;
+}
+
+.twocode p a:hover {
+    color: #399998;
+    text-decoration: none;
+}
+
+
+/* 账号登陆 */
+
+.login {
+    font-family: "微软雅黑";
+    width: 350px;
+    height: 320px;
+    background: white;
+    border-radius: 5px;
+    z-index: 3;
+    position: absolute;
+    box-shadow: 0 0 4px 0px white;
+    text-align: center;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.login_title {
+    font-size: 18px;
+    color: #333;
+    font-weight: 100;
+    padding-top: 32px;
+}
+
+.username {
+    width: 310px;
+    height: 40px;
+    border: .5px solid #e7e7e7;
+    border-bottom: none;
+    margin: 35px auto 0 auto;
+    border-radius: 5px 5px 0 0;
+    line-height: 40px;
+}
+
+.password {
+    width: 310px;
+    height: 40px;
+    border: .5px solid #e7e7e7;
+    border-radius: 0 0 5px 5px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.username input,
+.password input {
+    border: none;
+    outline: none;
+    width: 290px;
+    position: relative;
+    left: 10px;
+    opacity: 0.5;
+}
+
+.delete {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    background: url("pass_login_icons.png") -5px -5px no-repeat;
+    left: 294px;
+    top: -22px;
+}
+
+.delete:hover {
+    background: url("pass_login_icons.png") -5px -20px no-repeat;
+}
+
+.checkbox {
+    margin-top: 22px;
+    position: relative;
+    left: -106px;
+}
+
+.checkbox+span {
+    font-size: 14px;
+    display: inline-block;
+    color: #666;
+    position: relative;
+    left: -104px;
+    top: -2px;
+}
+
+.submit {
+    background: #3582f8;
+    width: 310px;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+.submit:hover {
+    opacity: 0.8;
+}
+
+.more ul {
+    margin-top: 16px;
+}
+
+.more li {
+    display: inline-block;
+    width: 153px;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.more li:hover {
+    opacity: 0.5;
+}
+
+.more li:last-child {
+    text-align: right;
+    color: #3582f8;
+}
+
+
+/*logo图标区域  */
+
+.bg10 {
+    width: 160px;
+    height: 160px;
+    border: 1px solid #ccc;
+    margin: 5px auto;
+    background: url('bg.png') -157px 4px no-repeat;
+}
+
+.bg1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('bg.png') -45px -229px no-repeat;
+}
+
+.bg2 {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: url('bg.png') 4px -228px no-repeat;
+}
+
+.loginbox_fotter {
+    border-radius: 6px;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    background: #f3f8ff;
+}
+
+.bg3 {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 115px;
+    /* /-422 -158 */
+    background: url('bg.png') -423px -159px no-repeat;
+}
+
+.bg3:hover {
+    background: url('bg.png') -463px -159px no-repeat;
+}
+
+.bg4 {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 175px;
+    /* 502 159   */
+    background: url('bg.png') -503px -159px no-repeat;
+}
+
+.bg4:hover {
+    background: url('bg.png') -543px -159px no-repeat;
+}
+
+.register {
+    font-family: "微软雅黑";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 92px;
+    height: 36px;
+    padding: 6px 10px;
+    border: 1px solid #bad4fd;
+    background: #f3f8ff;
+    color: #3582f8;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.loginbox_fotter p {
+    font-family: "微软雅黑";
+    text-decoration: none;
+    font-size: 14px;
+    color: #3582f8;
+    line-height: 75px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fotter {
+    width: 100%;
+    height: 166px;
+    background: #f3f8ff;
+    padding-top: 40px;
+}
+
+.copyRight {
+    width: 550px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.copyRight a {
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    float: left;
+    font-size: 12px;
+    color: #b6bac3;
+    font-family: "微软雅黑";
+}
+
+.logoarea {
+    width: 670px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.fo {
+    width: 90px;
+    height: 72px;
+    /* display: inline-block; */
+    float: left;
+    margin: 0 15px;
+}
+
+.bg5 {
+    margin-left: 30px;
+    background: url('bg.png') -500px -70px no-repeat;
+}
+
+.bg5:hover {
+    background: url('bg.png') -90px -160px no-repeat;
+}
+
+.bg6 {
+    background: url('bg.png') -320px 2px no-repeat;
+}
+
+.bg6:hover {
+    background: url('bg.png') -410px -68px no-repeat;
+}
+
+.bg7 {
+    background: url('bg.png') -270px -160px no-repeat;
+}
+
+.bg7:hover {
+    background: url('bg.png') -320px -70px no-repeat;
+}
+
+.bg8 {
+    background: url('bg.png') -500px 3px no-repeat;
+}
+
+.bg8:hover {
+    background: url('bg.png') -410px 3px no-repeat;
+}
+
+.bg9 {
+    background: url('bg.png') -180px -160px no-repeat;
+}
+
+.bg9:hover {
+    background: url('bg.png') -0px -160px no-repeat;
+}
